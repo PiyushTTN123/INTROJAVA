@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Area Of Circle</h1>
+    <p id="amount"></p>
+    <script>
+      function Area(radius) {
+        return radius * radius * Math.PI;
+      }
+      var radius = prompt("Enter Radius of circle:");
+      const value = Area(radius);
+      document.getElementById("amount").innerHTML = "Area of circle:" + value;
+    </script>
+  </body>
+</html>

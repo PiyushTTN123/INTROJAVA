@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>How To Copy Object's Data</h1>
+    <p id="a"></p>
+    <p id="a1"></p>
+    <p id="a3"></p>
+    <p id="a4"></p>
+    <script>
+      const person = {
+        firstName: "John",
+        lastName: "Singh",
+      };
+      function CopyObject(person) {
+        let p1 = {
+          ...person,
+        };
+        return p1;
+      }
+      document.getElementById("a").innerHTML =
+        "Firstname is is:" + person.firstName;
+      document.getElementById("a1").innerHTML =
+        "Lastname is:" + person.lastName;
+      const value = CopyObject(person);
+      document.getElementById("a3").innerHTML =
+        "Firstname from new object:" + value.firstName;
+      document.getElementById("a4").innerHTML =
+        "Lastname from new object:" + value.lastName;
+    </script>
+  </body>
+</html>

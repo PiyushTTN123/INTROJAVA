@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Simple Interest Calculator</h1>
+    <h2>With prompt() Method</h2>
+    <p id="amount"></p>
+    <p id="roi"></p>
+    <p id="time"></p>
+    <p id="si"></p>
+    <script>
+      let amount = prompt("Enter amount:");
+      let roi = prompt("Enter roi:");
+      let time = prompt("Enter time:");
+      let si = (amount * roi * time) / 100;
+      console.log("Amount:", amount);
+      document.getElementById("amount").innerHTML = "Amount:" + amount;
+      document.getElementById("roi").innerHTML = "Roi:" + roi;
+      document.getElementById("time").innerHTML = "Time:" + time;
+      document.getElementById("si").innerHTML = "Simple Interst is " + si;
+    </script>
+  </body>
+</html>
